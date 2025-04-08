@@ -12,6 +12,13 @@ print(ROWS, COLUMNS)
 pygame.init()
 screen = pygame.display.set_mode(SCREEN)
 
+# COLOR DEFINING FOR THE GAME
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+BLUE = (0, 0, 255)
+GREEN = (0, 255, 0)
+BLACK = (0, 0, 0)
+
 # KEEP the WINDOW RUNNING
 running = True
 while running:
