@@ -11,3 +11,13 @@ print(ROWS, COLUMNS)
 # CREATING A WINDOW
 pygame.init()
 screen = pygame.display.set_mode(SCREEN)
+
+# KEEP the WINDOW RUNNING
+running = True
+while running:
+    for event in pygame.event.get(): # EVENT HANDLING
+        if event.type == pygame.QUIT: # IF THE USER CLOSES THE WINDOW (IN THIS CASE THEY DID an EVENT)
+            running = False # STOP THE LOOP
+
+pygame.quit() # CLOSE THE WINDOW
+            
