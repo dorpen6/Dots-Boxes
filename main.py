@@ -22,6 +22,8 @@ BLACK = (0, 0, 0)
 # KEEP the WINDOW RUNNING
 running = True
 while running:
+    screen.fill(WHITE) # FILL THE WINDOW WITH WHITE COLOR
+    pygame.display.update() # UPDATE THE WINDOW
     for event in pygame.event.get(): # EVENT HANDLING
         if event.type == pygame.QUIT: # IF EVENT IS QUIT, which means they pressed the exit button on the top right
             running = False # STOP THE LOOP
