@@ -16,7 +16,7 @@ screen = pygame.display.set_mode(SCREEN)
 running = True
 while running:
     for event in pygame.event.get(): # EVENT HANDLING
-        if event.type == pygame.QUIT: # IF THE USER CLOSES THE WINDOW (IN THIS CASE THEY DID an EVENT)
+        if event.type == pygame.QUIT: # IF EVENT IS QUIT, which means they pressed the exit button on the top right
             running = False # STOP THE LOOP
 
 pygame.quit() # CLOSE THE WINDOW
